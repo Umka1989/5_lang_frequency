@@ -6,10 +6,10 @@ import collections
 def load_data(filepath):
     text = []
     if os.path.exists(filepath):
-        file = open(filepath, 'r').read()
-        for line in file.split('\n'):
+        unsplited_text = open(filepath, 'r').read()
+        for line in unsplited_text.split('\n'):
             for word in line.split(' '):
-                text.append(word)
+                text.append(word.upper())
     return text
 
 
