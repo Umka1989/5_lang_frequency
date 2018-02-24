@@ -15,14 +15,15 @@ python lang_frequency.py file_with_text.txt
 ```
 You need Python 3+ interpreter
 
-# Result of using ang example
+# Result of using and example
 
 Result of using program is a dictionary with 10 or less (for text shorter then 10 words) words with if frequency
 
 Example:
-Cat : 3
-Dog : 2
-Rat : 1
+
+```python
+Counter({'CAT': 3, 'DOG': 2, 'RAT': 1}]
+```
 
 # Project Goals
 
