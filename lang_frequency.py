@@ -11,7 +11,7 @@ def load_data(filepath):
 
 
 def text_to_list(unsplited_text):
-    #return formated list of words without digits and punctuation marks
+    #return formatted list of words without digits and punctuation marks
     list_of_words = []
     for line in unsplited_text.upper().split('\n'):
         for word in line.split(' '):
@@ -25,8 +25,13 @@ def text_to_list(unsplited_text):
 def get_most_frequent_words(list_of_words):
     frequencies_counter = collections.Counter(list_of_words)
     ten_most_frequent_word = frequencies_counter.most_common(10)
-    print("{} most frequent word".format(str(len(ten_most_frequent_word))))
-    for word, frequency in ten_most_frequent_word:
+    return ten_most_frequent_word
+
+
+def pprint_for_most_frequent_words(most_frequent_word)
+    """most_frequent_word must be list of tuples with word and its frequency"""
+    print("{} most frequent word".format(str(len(most_frequent_word))))
+    for word, frequency in most_frequent_word:
         print(word)
 
 
@@ -36,5 +41,6 @@ if __name__ == '__main__':
     else:
         file_content = load_data(sys.argv[1])
         list_of_words = text_to_list(file_content)
-        get_most_frequent_words(list_of_words)
+        most_frequent_word = get_most_frequent_words(list_of_words)
+        pprint_for_most_frequent_words(most_frequent_word)
 
