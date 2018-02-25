@@ -5,8 +5,9 @@ This is tool for frequency analysis of words
 # How to use
 Like imported module in python:
 ```python
-from lang_frequency import get_most_frequent_words
-result = get_most_frequent_words(some_text)
+from lang_frequency import get_most_frequent_words, text_to_list
+list_of_words = text_to_list(some_text)
+result = get_most_frequent_words(list_of_words)
 ```
 
 Like independent application with bash
