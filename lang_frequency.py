@@ -28,10 +28,9 @@ def get_most_frequent_words(list_of_words):
     return ten_most_frequent_word
 
 
-def pprint_for_most_frequent_words(most_frequent_word)
-    """most_frequent_word must be list of tuples with word and its frequency"""
-    print("{} most frequent word".format(str(len(most_frequent_word))))
-    for word, frequency in most_frequent_word:
+def pprint_for_most_frequent_words(most_frequent_words):
+    print("{} most frequent words".format(str(len(most_frequent_words))))
+    for word, frequency in most_frequent_words:
         print(word)
 
 
