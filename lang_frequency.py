@@ -11,16 +11,15 @@ def load_data(filepath):
 
 
 def split_text_to_list(unsplited_text):
-    # return formatted list of words without digits and punctuation marks
-    list_of_words = []
+    list_of_formatted_words = []
     for word in unsplited_text.upper().split():
         count_alphabetical_symbols = sum(1 for symbol in word if symbol.isalpha())
         if len(word) == count_alphabetical_symbols:
-            list_of_words.append(word)
+            list_of_formatted_words.append(word)
         elif len(word) - count_alphabetical_symbols == 1:
             word = word[:-1]
-            list_of_words.append(word)
-    return list_of_words
+            list_of_formatted_words.append(word)
+    return list_of_formatted_words
 
 
 def get_most_frequent_words(list_of_words, number_of_most_frequent_word=10):
