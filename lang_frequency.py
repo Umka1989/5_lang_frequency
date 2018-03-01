@@ -13,7 +13,8 @@ def load_data(filepath):
 def split_text_to_list(unsplited_text):
     list_of_formatted_words = []
     for word in unsplited_text.upper().split():
-        count_alphabetical_symbols = sum(1 for symbol in word if symbol.isalpha())
+        count_alphabetical_symbols = sum(1 for symbol
+                                         in word if symbol.isalpha())
         if len(word) == count_alphabetical_symbols:
             list_of_formatted_words.append(word)
         elif len(word) - count_alphabetical_symbols == 1:
@@ -24,13 +25,14 @@ def split_text_to_list(unsplited_text):
 
 def get_most_frequent_words(list_of_words, number_of_most_frequent_word=10):
     frequencies_counter = collections.Counter(list_of_words)
-    ten_most_frequent_words = frequencies_counter.most_common(number_of_most_frequent_word)
+    ten_most_frequent_words = \
+        frequencies_counter.most_common(number_of_most_frequent_word)
     return ten_most_frequent_words
 
 
 def print_for_most_frequent_words(most_frequent_words):
-    print("{} most frequent words".format(len(most_frequent_words)))
-    for word, frequency in most_frequent_words:
+    print('{} most frequent words'.format(len(most_frequent_words)))
+    for word, _ in most_frequent_words:
         print(word)
 
 
