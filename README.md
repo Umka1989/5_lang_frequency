@@ -23,7 +23,7 @@ Result of using program is a dictionary with 10 or less (for text shorter then 1
 Example:
 
 ```python
-Counter({'CAT': 3, 'DOG': 2, 'RAT': 1})
+[('CAT', 3), ('DOG', 2), ('RAT', 1)]
 ```
 
 # Project Goals
