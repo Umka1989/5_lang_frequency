@@ -19,7 +19,8 @@ def split_text_to_list(unsplited_text):
             list_of_formatted_words.append(word)
         elif len(word) - count_alphabetical_symbols == 1:
             word = word[:-1]
-            list_of_formatted_words.append(word)
+            if word:
+                list_of_formatted_words.append(word)
     return list_of_formatted_words
 
 
