@@ -21,6 +21,18 @@ You need Python 3+ interpreter
 
 Result of using program is a list of tuple with words and it's frequency (with using model's funtions) or just most common words (if you use it like independed progrmm)  
 
+Example of return (if you use just imported functions):
+```python
+
+[('WORD', 10), ('HOUSE', 3)]
+```
+
+Example of return (if use you use like independent script):
+```python
+2 most frequent words
+WORD
+HOUSE
+```
 # Project Goals
 
 The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
