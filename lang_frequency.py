@@ -25,9 +25,9 @@ def split_text_to_list(unsplited_text):
 
 def get_most_frequent_words(list_of_words, number_of_most_frequent_word=10):
     frequencies_counter = collections.Counter(list_of_words)
-    ten_most_frequent_words = \
-        frequencies_counter.most_common(number_of_most_frequent_word)
-    return ten_most_frequent_words
+    most_frequent_words = frequencies_counter.most_common(
+        number_of_most_frequent_word)
+    return most_frequent_words
 
 
 def print_for_most_frequent_words(most_frequent_words):
